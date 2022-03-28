@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href=".\pokedex.css">
+
+</head>
+<body>
+    <video autoplay muted loop id="bike">
+        <source src="./img/Horizon.mp4" type="video/mp4">
+      </video>
+    <div><h1>Pokedex LaunchX</h1></div>
+    <div class="content">
+        <div class="pokname">
+         <input type="text" placeholder="Name" id="pokeName" name="pokeName"><br>
+        </div>
+        <div class="pokeimg">
+            <div class="pokeimgchild"><img src="./img/pokeball.png" alt="Pokemon" id="pokeImg" width="140px"><br></div>
+        </div>
+        <div class="butn">
+            <button id="btn" onclick="fetchPokemon()">Go</button>
+        </div>
+        <div class="arriba">
+            <button id="arrowup" class="flecha"  onclick="fetchevo()"></button>
+        </div>
+        <div class="abajo">
+            <button id="arrowdown" class="flecha"  onclick="fetchdevo()"></button>
+        </div>
+        <div class="derecha">
+            <button id="arrowright" class="flecha" onclick="fetchNext()"></button>
+        </div>
+        <div class="izquierda">
+            <button id="arrowleft" class="flecha"  onclick="fetchprev()"></button>
+        </div>
+        <div class="stats">
+            <div><p id="numbername">Hola Explorer!</p></div>
+            <div class="statsrow">
+                <div class="statschild"><p id="atk"></p></div>
+                <div class="statschild"><p id="def"></p></div>
+            </div>
+        </div> 
+            <div class="stats" style="left: 200px;top:210px">
+                <div class="statschild"><p id="spd"></p></div>
+                <div class="statschild"><p id="hp"></p></div>
+            </div>
+        </div>
+    </div>
+    
+    </body>
+<footer>
+    <script src="./pokedex.js" ></script>
+    <div>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+</footer>
+</html>
